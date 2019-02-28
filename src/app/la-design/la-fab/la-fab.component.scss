@@ -1,0 +1,29 @@
+@import './src/sass/_variables.scss';
+
+.fab {
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 50%;
+  padding: 0px;
+  border: none;
+  margin: 0px 5px;
+
+  &.add {
+      background: $green-color-system url('/assets/icons/ico_add.svg') no-repeat center;
+      font-size: $regular-text-size;
+  }
+
+  &.edit {
+      background: $yellow-color-system url('/assets/icons/ico_edit.svg') no-repeat center;
+      font-size: $regular-text-size;
+  }
+
+  &.delete {
+      background: $red-color-system url('/assets/icons/ico_delete.svg') no-repeat center;
+      font-size: $regular-text-size;
+  }
+
+  &.send {
+      background: $bright-gray-color-system url('/assets/icons/ico_send.svg') no-repeat center;
+      font-size: $regular-text-size;
+  }
+}

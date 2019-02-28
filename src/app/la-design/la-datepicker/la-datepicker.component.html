@@ -1,0 +1,10 @@
+<div class="grid-container">
+    <div class="grid-item text-input">
+      <input id="la-date" value="{{ value | date: 'dd/MM/yyyy' }}"  (click)="showCalendar = !showCalendar"/>
+    </div>
+    <!-- <div class="grid-item button">
+    </div> -->
+    <div class="grid-item calendar">
+      <la-calendar *ngIf="showCalendar" (onSelectDate)="value = $event"></la-calendar>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="body">
+    <ng-container *ngFor="let t of tabs; let i = index">
+      <la-sidenav-tab [text]= "t.name" [icon]="t.ico" [iconMark]="t.ico_mark" [href]="t.view" [status]="sidenavStatus" ></la-sidenav-tab>
+    </ng-container>
+  </div>

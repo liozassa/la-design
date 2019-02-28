@@ -1,0 +1,18 @@
+<!-- <select [name]="name" [(ngModel)]="val">
+  <option *ngFor="let d of data" value="d.value">
+    {{ d.name }}
+  </option>
+</select> -->
+
+<div class="container">
+  <div class="dropdown" (click)="openDdl($event)">
+    <div class="select">
+      <span>{{ title }}</span>
+      <i class="fa fa-chevron-left"></i>
+    </div>
+    <input type="hidden">
+    <ul class="dropdown-menu" [@ddlopen]='state'>
+      <li *ngFor="let d of data" id="d.value" (click)="selecteItem(d.value, d.name)"> {{ d.name }} </li>
+    </ul>
+  </div>
+</div>
